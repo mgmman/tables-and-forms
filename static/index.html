@@ -10,43 +10,45 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="POST">
-        <label>Выберите ваше любимое животное
-            <select name="petType">
-                <option value="dog">Собака</option>
-                <option value="cat">Кошка</option>
-                <option value="parrot">Попугай</option>
-            </select>
-        </label>
-        <label>
-            <input type="radio" name="gender" value="boy" checked>СамЭц
-        </label>
-        <label>
-            <input type="radio" name="gender" value="girl">Самка
-        </label>
-        <label>
-            <input type="radio" name="gender" value="none">хз
-        </label>
-        <label>Выберите цвет глаз
-            <input name="eyeColor" type="color">
-        </label>
-        <label>
-            Выберите длину хвоста<input type="number" name="tailLength" value="7" max="120" min="7">
-        </label>
-        <label>
-            <input type="text" name="name" placeholder="Name" minlength="3" maxlength="50" value="жучка">
-        </label>
-        <label>
-            <input type="date" name="dateOfBirth" value="01.01.2020">
-        </label>
-        <label>
-            <input type="email" name="email" placeholder="Email">
-        </label>
-        <label>
-            <input type="tel" name="phone" placeholder="Phone number">
-        </label>
-        <label>
-            <input type="checkbox" name="rules" placeholder="Rules" value="true" checked required> я согласен с условиями и всем таким
-        </label>
+        <div class="inputs">
+            <label>Выберите ваше любимое животное
+                <select name="petType">
+                    <option value="dog">Собака</option>
+                    <option value="cat">Кошка</option>
+                    <option value="parrot">Попугай</option>
+                </select>
+            </label>
+            <label>
+                <input type="radio" name="gender" value="boy" checked>СамЭц
+            </label>
+            <label>
+                <input type="radio" name="gender" value="girl">Самка
+            </label>
+            <label>
+                <input type="radio" name="gender" value="none">хз
+            </label>
+            <label>Выберите цвет глаз
+                <input name="eyeColor" type="color">
+            </label>
+            <label>
+                Выберите длину хвоста<input type="number" name="tailLength" value="7" max="120" min="7">
+            </label>
+            <label>
+                <input type="text" name="name" placeholder="Name" minlength="3" maxlength="50" value="жучка">
+            </label>
+            <label>
+                <input type="date" name="dateOfBirth" value="01.01.2020">
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                <input type="tel" name="phone" placeholder="Phone number">
+            </label>
+            <label>
+                <input type="checkbox" name="rules" placeholder="Rules" value="true" checked required> я согласен с условиями и всем таким
+            </label>
+        </div>
         <button type="submit">Отправить</button>
         <button type="reset">Сбросить</button>
     </form>
