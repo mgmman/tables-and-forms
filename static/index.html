@@ -18,26 +18,25 @@
             </select>
         </label>
         <label>
-            <input type="radio" name="gender" value="male" checked>СамЭц
+            <input type="radio" name="gender" value="boy" checked>СамЭц
         </label>
         <label>
-            <input type="radio" name="gender" value="female">Самка
+            <input type="radio" name="gender" value="girl">Самка
+        </label>
+        <label>
+            <input type="radio" name="gender" value="none">хз
         </label>
         <label>Выберите цвет глаз
-            <select name="eyeColor">
-                <option value="blue">Синий</option>
-                <option value="green">Зеленый</option>
-                <option value="brown">Карий</option>
-            </select>
+            <input name="eyeColor" type="color">
         </label>
         <label>
-            Выберите длину хвоста<input type="number" name="tailLength" value="4">
+            Выберите длину хвоста<input type="number" name="tailLength" value="7" max="120" min="7">
         </label>
         <label>
-            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="name" placeholder="Name" minlength="3" maxlength="50" value="жучка">
         </label>
         <label>
-            <input type="date" name="dateOfBirth">
+            <input type="date" name="dateOfBirth" value="01.01.2020">
         </label>
         <label>
             <input type="email" name="email" placeholder="Email">
@@ -46,7 +45,7 @@
             <input type="tel" name="phone" placeholder="Phone number">
         </label>
         <label>
-            <input type="text" name="rules" placeholder="Rules">
+            <input type="text" name="rules" placeholder="Rules" value="true">
         </label>
         <button type="submit">Отправить</button>
         <button type="reset">Сбросить</button>
