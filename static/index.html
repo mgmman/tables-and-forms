@@ -10,6 +10,30 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="POST">
+        <label>Выберите ваше любимое животное
+            <select name="petType">
+                <option value="dog">Собака</option>
+                <option value="cat">Кошка</option>
+                <option value="parrot">Попугай</option>
+            </select>
+        </label>
+        <label>
+            <input type="radio" name="gender" value="male">СамЭц
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">Самка
+        </label>
+        <label>Выберите цвет глаз
+            <select name="eyeColor">
+                <option value="blue">Синий</option>
+                <option value="green">Зеленый</option>
+                <option value="brown">Карий</option>
+            </select>
+        </label>
+        <label>
+            Выберите длину хвоста<input type="number">
+        </label>
+
         <button type="submit">Отправить</button>
     </form>
 
